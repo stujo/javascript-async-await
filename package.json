@@ -1,0 +1,20 @@
+{
+  "name": "javascript-async-await",
+  "version": "1.0.0",
+  "description": "Exploration of JavaScript which may be in ES2017",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example-01" : "node src/01-example-async-await.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stujo/javascript-async-await.git"
+  },
+  "author": "stujo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stujo/javascript-async-await/issues"
+  },
+  "homepage": "https://github.com/stujo/javascript-async-await#readme"
+}
