@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "example-01" : "node src/01-example-async-await.js"
+    "example-01": "babel-node src/01-example-async-await.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/stujo/javascript-async-await/issues"
   },
-  "homepage": "https://github.com/stujo/javascript-async-await#readme"
+  "homepage": "https://github.com/stujo/javascript-async-await#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2017": "^6.16.0"
+  }
 }
