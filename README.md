@@ -1,5 +1,41 @@
+# JavaScript Async Await Exploration
 
+Experiment with ``async`` ``await`` with node using babel's ES2017 support
 
+# Write a Sample
+
+* Final ``src/01-example-async-await.js``:
+```
+function waiter(message){
+  return new Promise(function(resolve){
+    setTimeout(function(){
+      resolve(message);
+    }, 1500);
+  });
+}
+
+async function example(){
+  console.log(await waiter('Hello World!'));
+}
+
+example()
+```
+
+# Add ``babel-node`` support
+
+If you are just experimenting you can use babel-node command line tool to try out the new JavaScript features
+
+* Install babel-cli into your project
+  ``$ npm install --save-dev babel-cli``
+
+* Install the presets
+  ``$ npm install --save-dev babel-preset-es2015 babel-preset-es2017``
+
+* Setup your babel presets: Create ``.babelrc`` in the project root folder with the following contents:
+  ``{ "presets": ["es2015","es2017"] }``
+
+* Run your script with babel-node
+  ``$ babel-node src/01-example-async-await.js``
 
 # Add WebPack
 
